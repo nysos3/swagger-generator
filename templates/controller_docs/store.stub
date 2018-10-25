@@ -10,14 +10,7 @@
    *   @OA\MediaType(
    *      mediaType="application/json",
    *   ),
-   *   @OA\RequestBody(
-   *     description="$MODEL_NAME$ that should be updated",
-   *     required=true,
-   *     @OA\MediaType(
-   *       mediaType="application/json",
-   *       @OA\Schema(ref="#/components/schemas/$MODEL_NAME$")
-   *     )
-   *   ),
+   *   @OA\RequestBody(ref="#/components/requestBodies/Create$MODEL_NAME$"),
    *   @OA\Response(
    *     response=200,
    *     description="successful operation",
