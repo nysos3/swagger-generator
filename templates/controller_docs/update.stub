@@ -3,7 +3,7 @@
    * @param Update$MODEL_NAME$APIRequest $request
    * @return Response
    *
-   * @OA\Put(
+   * @OA\Patch(
    *   path="/$MODEL_NAME_PLURAL_CAMEL$/{id}",
    *   summary="Update the specified $MODEL_NAME$ in storage",
    *   tags={"$MODEL_NAME$"},
