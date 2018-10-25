@@ -16,7 +16,7 @@
    *     in="path",
    *     description="id of $MODEL_NAME$ that should be updated",
    *     required=true,
-   *     @OA\Schema(ref="#/components/schemas/$MODEL_NAME$/properties/id)
+   *     @OA\Schema(ref="#/components/schemas/$MODEL_NAME$/properties/id")
    *   ),
    *   @OA\RequestBody(
    *     description="$MODEL_NAME$ that should be updated",
