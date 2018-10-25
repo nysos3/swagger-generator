@@ -12,13 +12,6 @@
    *     mediaType="application/json",
    *   ),
    *   @OA\Parameter(
-   *       name="id",
-   *       description="id of $MODEL_NAME$",
-   *       type="integer",
-   *       required=true,
-   *       in="path"
-   *   ),
-   *   @OA\Parameter(
    *     name="id",
    *     in="path",
    *     description="id of $MODEL_NAME$ that should be updated",
