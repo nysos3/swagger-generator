@@ -8,31 +8,13 @@
    *   tags={"$MODEL_NAME$"},
    *   description="Store $MODEL_NAME$",
    *   @OA\MediaType(
-   *      mediaType="application/json",
+   *      mediaType="$API_CONTENT_TYPE$"
    *   ),
    *   @OA\RequestBody(ref="#/components/requestBodies/Create$MODEL_NAME$"),
    *   @OA\Response(
    *     response=200,
    *     description="successful operation",
-   *     @OA\MediaType(
-   *       mediaType="application/json",
-   *       @OA\Schema(
-   *         type="object",
-   *         @OA\Property(
-   *           property="success",
-   *           type="boolean"
-   *         ),
-   *         @OA\Property(
-   *             property="data",
-   *             type="object",
-   *             ref="#/components/schemas/$MODEL_NAME$"
-   *         ),
-   *         @OA\Property(
-   *           property="message",
-   *           type="string"
-   *         )
-   *       )
-   *     )
+   *     ref="#/components/responses/$MODEL_NAME$"
    *   )
    * )
    */

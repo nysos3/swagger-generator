@@ -8,30 +8,11 @@
    *   tags={"$MODEL_NAME$"},
    *   description="Get all $MODEL_NAME_PLURAL$",
    *   @OA\MediaType(
-   *     mediaType="application/json",
+   *     mediaType="$API_CONTENT_TYPE$"
    *   ),
    *   @OA\Response(
    *     response=200,
-   *     description="successful operation",
-   *     @OA\MediaType(
-   *       mediaType="application/json",
-   *       @OA\Schema(
-   *         type="object",
-   *         @OA\Property(
-   *           property="success",
-   *           type="boolean"
-   *         ),
-   *         @OA\Property(
-   *           property="data",
-   *           type="array",
-   *           @OA\Items(ref="#/components/schemas/$MODEL_NAME$")
-   *         ),
-   *         @OA\Property(
-   *           property="message",
-   *           type="string"
-   *         )
-   *       )
-   *     )
+   *     ref="#/components/responses/$MODEL_NAME_PLURAL$"
    *   )
    * )
    */

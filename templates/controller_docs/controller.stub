@@ -1,4 +1,35 @@
 /**
  * Class $MODEL_NAME$Controller
  * @package $NAMESPACE_API_CONTROLLER$
+ *
+ * @OA\Response(
+ *   response="$MODEL_NAME$",
+ *   description="successful operation",
+ *   @OA\MediaType(
+ *     mediaType="$API_CONTENT_TYPE$",
+ *     @OA\Schema(
+ *        allOf={@OA\Schema(ref="/jsonapi.org-schema.json#/components/schemas/success")},
+ *        @OA\Property(
+ *         property="data",
+ *         type="object",
+ *         ref="#/components/schemas/$MODEL_NAME$"
+ *       )
+ *     )
+ *   )
+ * ),
+ * @OA\Response(
+ *   response="$MODEL_NAME_PLURAL$",
+ *   description="successful operation",
+ *   @OA\MediaType(
+ *     mediaType="$API_CONTENT_TYPE$",
+ *     @OA\Schema(
+ *        allOf={@OA\Schema(ref="/jsonapi.org-schema.json#/components/schemas/success")},
+ *        @OA\Property(
+ *         property="data",
+ *         type="array",
+ *         @OA\Items(ref="#/components/schemas/$MODEL_NAME$")
+ *       )
+ *     )
+ *   )
+ * )
  */
