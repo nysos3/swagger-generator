@@ -2,6 +2,7 @@
  * @OA\Schema(
  *   schema="$MODEL_NAME$",
  *   required={$REQUIRED_FIELDS$},
+ *   allOf={@OA\Schema(ref="/jsonapi.org-schema.json#/components/schemas/resource")},
 $PROPERTIES$
  * )
  */
